@@ -1,0 +1,24 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+//In order not to use encapsulation: ViewEncapsulation.None
+//in our app.component.ts file we declare our styles for Datepicker as global
+
+// we don't use display: none in order to hide default underline, because this
+// underline is used for dialog positioning
+.mat-input-underline.mat-form-field-underline{
+  width: 0;
+}
+
+mat-tab-body {
+width: 100%;
+position: absolute;
+display: flex !important;
+justify-content: center;
+}
+
+mat-form-field {
+  border: 1px blue dashed;
+  margin: 10px;
+}

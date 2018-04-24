@@ -39,4 +39,5 @@ import {MatInputModule, MatNativeDateModule} from '@angular/material';
   ],
   providers: []
 })
-export class MaterialModule { }
+export class MaterialModule {
+}

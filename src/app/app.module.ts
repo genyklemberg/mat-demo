@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
 import {HttpClientModule} from '@angular/common/http';
@@ -24,8 +24,7 @@ import {MatIconRegistry} from '@angular/material';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(
-    public matIconRegistry: MatIconRegistry) {
+  constructor(public matIconRegistry: MatIconRegistry) {
     matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
   }
 }
